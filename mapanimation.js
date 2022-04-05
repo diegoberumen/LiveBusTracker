@@ -1,3 +1,11 @@
+mapboxgl.accessToken = 'pk.eyJ1IjoiZGllZ29iZXJ1bWVuIiwiYSI6ImNsMGxoemEzNDB3ZjQzcm9hazJrdDA3MzYifQ.ihCkd66m_uqGQ3yy9uFkuQ';
+
+var map = new mapboxgl.Map({
+    container: document.getElementById('map'),
+    style: 'mapbox://styles/mapbox/streets-v11',
+    center: [-71.05427480506572, 42.3665868421208],
+    zoom: 13
+});
 
 var marker = 0;
 let latitude = 0
