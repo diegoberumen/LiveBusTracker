@@ -28,7 +28,7 @@ async function run(){
     }
 
 	// timer
-	setTimeout(run, 10000);
+	setTimeout(run, 5000);
 }
 
 // Request bus data from MBTA
