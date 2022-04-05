@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Real-Time Bus Tracker</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css" rel="stylesheet" />
+    <script src="tracker.js"></script>
+    <img id="redMarker" class="hidden" src="red.png">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    
+        .map-overlay {
+            position: absolute;
+            left: 0;
+            padding: 10px;
+        }
+
+        .hidden {
+            display: none
+        }
+    </style>
+
+</head>
+<body>
+
+    <div id="map"></div>
+    
+    <div class="map-overlay top">
+        <button style="font-size: 2em;" onclick="run()">
+            Track MBTA Route 171
+        </button>
+    </div>
+
+    <script>
+
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZGllZ29iZXJ1bWVuIiwiYSI6ImNsMGxoemEzNDB3ZjQzcm9hazJrdDA3MzYifQ.ihCkd66m_uqGQ3yy9uFkuQ';
+
+            var map = new mapboxgl.Map({
+                container: document.getElementById('map'),
+                style: 'mapbox://styles/mapbox/streets-v11',
+                center: [-71.05427480506572, 42.3665868421208],
+                zoom: 13
+            });
+
+    </script>
+        
+</body>
+</html>
