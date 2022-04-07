@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 4;
+}
+
+#brand  {
+    color: rgb(204, 6, 6);
+    font-family: 'Space Mono', monospace;
+}
+
+.map-overlay {
+    position: relative;
+    left: 0;
+    padding: 0;
+    z-index: 6;
+}
+
+.hidden {
+    display: none
+}
+
+.button{
+    position: absolute;
+    padding: 10px;
+    z-index: 5;
+}
