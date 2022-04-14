@@ -11,9 +11,11 @@ body {
     z-index: 4;
 }
 
-#brand  {
+#brand {
     color: rgb(204, 6, 6);
     font-family: 'Space Mono', monospace;
+    font-style: bold;
+    font-size: xx-large;
 }
 
 .map-overlay {
